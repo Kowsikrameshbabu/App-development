@@ -1,0 +1,159 @@
+/* Postjob.module.css */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.postjob_maindiv {
+  height: 300px;
+  width: 100%;
+  background-color: rgb(4, 4, 114);
+}
+
+.postjob_subdiv span {
+  margin-bottom: 5px;
+}
+
+.postjob_subdiv span,
+p {
+  padding-left: 50px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.postjob_maindiv h1 {
+  padding-top: 50px;
+  padding-left: 50px;
+  color: white;
+}
+
+.spandiv pre {
+  color: white;
+  margin-left: 50px;
+  font-size: 15px;
+}
+
+.postjob_jobinfo {
+  box-sizing: border-box;
+  height: 1600px;
+  width: 100%;
+  border: 10px solid rgb(235, 233, 233);
+  background-color: rgb(235, 233, 233);
+  margin: 50px auto;
+}
+
+.postjob_jobinfo input,
+.postjob_jobinfosub input {
+  border: 1px solid #dacdcd;
+}
+
+.postjob_jobinfosub {
+  height: 1450px;
+  width: 1000px;
+  padding: 20px;
+  border: 10px solid white;
+  background-color: white;
+  margin: 100px auto;
+}
+
+.postjob_jobinfosub h1 {
+  color: rgb(4, 4, 114);
+  text-align: center;
+}
+
+label,
+input {
+  margin-bottom: 5px;
+}
+
+.flexrow {
+  display: flex;
+  gap: 20px;
+}
+
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.postjob_maindiv input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.postjob_maindiv {
+  display: block;
+}
+
+.innerflexrow {
+  flex: 1;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.spandiv {
+  display: block;
+  margin-top: 5px;
+}
+
+.styled {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.styled:focus,
+select:focus,
+textarea:focus {
+  border: 3px solid #007bff;
+  outline: none;
+}
+
+.jobtitle,
+.flexrow,
+.form-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.submit-btn button {
+  background-color: rgb(4, 4, 114);
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-btn button:hover {
+  background-color: rgb(4, 4, 114);
+  cursor: pointer;
+  border-radius: 20px;
+}
