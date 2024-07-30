@@ -1,5 +1,5 @@
 import Card from "../CARD/Card";
-import Navbar from "../NAVBAR/Navbar";
+import Footer from "../../Fresh/Footer";
 import React, { useEffect, useState } from "react";
 import styles from "./Browse.module.css";
 
@@ -9,7 +9,7 @@ const Browse = () => {
   const [location, setLocation] = useState("");
 
   useEffect(() => {
-    fetch('/jobs.json')
+    fetch("http://localhost:8080/jobsdata")
       .then(response => response.json())
       .then(data => setJobs(data));
   }, []);
@@ -20,29 +20,25 @@ const Browse = () => {
   };
 
   const filteredJobs = jobs.filter(job => 
-    job.title.toLowerCase().includes(keyword.toLowerCase()) &&
+    job.jobTitle.toLowerCase().includes(keyword.toLowerCase()) &&
     job.location.toLowerCase().includes(location.toLowerCase())
   );
 
   return (
+    <>
+    <div className="topspace"></div>
+    <div className="Contacth">
+                <h1>Find a Job</h1>
+                <div className="line"></div>
+                <p>
+                    Digital platform that connects employers with job seekers, <br />{" "}
+                    providing a space for posting job listings and applying for positions,
+                    To get a Dream job
+                </p>
+            </div>
     <div className={styles.browse_wrapper}>
-      <Navbar />
-      <div className={styles.browse_browsemaindiv}>
-        <div>
-          <h1>Browse a Job</h1>
-          <span>________________</span>
-        </div>
-        <div>
-          <p>
-            Business plan draws on a wide range of knowledge from different
-            business disciplines.
-          </p>
-          <p>Business draws on a wide range of different business.</p>
-        </div>
-        <div>
-          <pre>Home | Browse Job</pre>
-        </div>
-      </div>
+    
+   
       <div className={styles.browse_filterdiv}>
         <div className={styles.filter_bar}>
           <input
@@ -68,6 +64,8 @@ const Browse = () => {
         ))}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

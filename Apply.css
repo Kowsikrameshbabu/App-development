@@ -1,0 +1,103 @@
+.applymaindiv{
+    height: 700px;
+    width:109%;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    
+}
+
+.applyform {
+    background-color: white;
+    height: 600px;
+    width: 800px;
+    margin-left:360px;
+    margin-top:100px;
+    border-radius: 20px;
+    
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.1); 
+    
+     
+}
+
+
+
+.applyform h2{
+    text-align: center;
+    padding-top: 20px;
+}
+.appflexrow{
+
+    box-sizing: border-box;
+}
+.appflex1 label{
+    display: block;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+.appflexrow{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+.appflex1 input{
+    margin-left: 30px;
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.adddiv label{
+    display: block;
+}
+.adddiv{
+    padding-left: 30px;
+}
+.adddiv textarea{
+    width: 730px;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    height: 60px;
+}
+.appDate{
+    padding-left: 30px;
+}
+.appDate label,
+.cv label{
+    display: block;
+}
+
+.appDate input{
+    padding: 10px;
+    width: 275px;
+    border-radius: 5px;
+}
+.cv label{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 28px;
+}
+.cv input{
+    padding: 5px;
+    margin-left: 24px;
+
+}
+.submitapply{
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+}
+.submitapply button{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width:150px;
+    color: white;
+    background-color: rgb(32, 32, 134);
+}
+.applymaindiv input:focus{
+    border:2px solid blue;
+}

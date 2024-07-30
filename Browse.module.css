@@ -2,230 +2,241 @@
 
 
   
-  .browse_browsemaindiv {
-    box-sizing: border-box;
-    height: 300px;
-    width: 100%;
-    background-color: rgba(8, 8, 82, 0.9);
-    color: white;
-    padding-left: 40px;
-  }
+.browse_browsemaindiv {
+  box-sizing: border-box;
+  height: 150px;
+  width: 107%;
+  background-color: rgba(8, 8, 82, 0.9);
+  color: white;
+  padding-left: 40px;
+}
+
+.browse_browsemaindiv h1 {
+  padding-top: 30px;
+}
+
+.browse_browsemaindiv pre {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 10px;
+  line-height: 0;
+  color: white;
+}
+.browsehead{
+  width:127px;
+  padding:30px;
+  background-Color:rgb(44, 114, 211);
+}
+
+.browse_browsemaindiv p {
+  line-height: 5px;
+}
+
+.browse_browsemaindiv pre {
+  padding-top: 20px;
+}
+
+.browse_wrapper {
+  background-color: rgb(238, 238, 241);
+  padding: 20px;
+  padding-left: 30px;
+  width: 107%;
+  padding-right: 30px;
   
-  .browse_browsemaindiv h1 {
-    padding-top: 50px;
-  }
-  
-  .browse_browsemaindiv pre {
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 10px;
-    line-height: 0;
-  }
-  
-  .browse_browsemaindiv p {
-    line-height: 5px;
-  }
-  
-  .browse_browsemaindiv pre {
-    padding-top: 20px;
-  }
-  
-  .browse_wrapper {
-    background-color: rgb(238, 238, 241);
-    padding: 20px;
-  }
-  
-  .browse_filterdiv {
-    height: 200px;
-    width: 100%;
-    background-color: white;
-    margin: 40px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .browse_filterdiv input {
-    font-size: 20px;
-    margin-left: 20px;
-    padding: 10px;
-    border-radius: 10px;
-    width: 300px;
-  }
-  
-  .browse_filterdiv button {
-    font-size: 20px;
-    margin-left: 20px;
-    padding: 10px;
-    width: 150px;
-    color: white;
-    background-color: rgb(7, 7, 112);
-    border-radius: 5px;
-  }
-  
-  .browse_jobcards {
-    display: flex;
-    flex-direction: row;
-    height: auto; 
-    width: 100%; 
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-  }
-  
-  .browse_jobcards > div { /* Assuming each job card is a direct child of .browse_jobcards */
-    flex: 0 1 calc(33.33% - 20px); /* Calculate the width for two items per row, accounting for gap */
-    box-sizing: border-box;
-    height: 300px; /* Adjust height as necessary */
-  }
-  
-  .browse_div1 {
-    height: 300px;
-    width: 100%;
-    background-color: rgb(4, 4, 114);
-  }
-  
-  .browse_div2 span {
-    margin-bottom: 5px;
-  }
-  
-  .browse_div2 span,
-  .browse_div2 p {
-    padding-left: 50px;
-    padding-bottom: 5px;
-    color: white;
-  }
-  
-  .browse_div1 h1 {
-    padding-top: 50px;
-    padding-left: 50px;
-    color: white;
-  }
-  
-  .browse_span pre {
-    color: white;
-    margin-left: 50px;
-    font-size: 15px;
-  }
-  
-  .browse_div4 {
-    box-sizing: border-box;
-    height: 1600px;
-    width: 100%;
-    border: 10px solid rgb(235, 233, 233);
-    background-color: rgb(235, 233, 233);
-    margin: 50px auto;
-  }
-  
-  .browse_div4 input,
-  .browse_div5 input {
-    border: 1px solid #dacdcd;
-  }
-  
-  .browse_div5 {
-    height: 1450px;
-    width: 1000px;
-    padding: 20px;
-    border: 10px solid white;
-    background-color: white;
-    margin: 100px auto;
-  }
-  
-  .browse_div5 h1 {
-    color: rgb(4, 4, 114);
-    text-align: center;
-  }
-  
-  .browse_label,
-  .browse_input {
-    margin-bottom: 5px;
-  }
-  
-  .browse_flexrow {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .browse_select {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f9f9f9;
-    transition: border-color 0.3s ease;
-  }
-  
-  .browse_input {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 20px;
-  }
-  
-  .browse_label {
-    display: block;
-  }
-  
-  .browse_innerflexrow {
-    flex: 1;
-  }
-  
-  .browse_textarea {
-    width: 100%;
-    box-sizing: border-box;
-    height: 100px;
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f9f9f9;
-    transition: border-color 0.3s ease;
-  }
-  
-  .browse_span {
-    display: block;
-    margin-top: 5px;
-  }
-  
-  .browse_styled {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f9f9f9;
-    transition: border-color 0.3s ease;
-  }
-  
-  .browse_styled:focus,
-  .browse_select:focus,
-  .browse_textarea:focus {
-    border: 3px solid #007bff;
-    outline: none;
-  }
-  
-  .browse_jobtitle,
-  .browse_flexrow,
-  .browse_form-group {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .browse_submit-btn button {
-    background-color: rgb(4, 4, 114);
-    padding: 15px;
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-  }
-  
-  .browse_submit-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .browse_submit-btn button:hover {
-    background-color: rgb(4, 4, 114);
-    cursor: pointer;
-    border-radius: 20px;
-  }
-  
+}
+
+.browse_filterdiv {
+  height: 100px;
+  width: 75%;
+  background-color: white;
+  border-radius: 15px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.browse_filterdiv input {
+  font-size: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.browse_filterdiv button {
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  width: 150px;
+  color: white;
+  background-color: rgb(7, 7, 112);
+  border-radius: 5px;
+}
+
+.browse_jobcards {
+  display: flex;
+  flex-direction: row;
+  height: auto; 
+  width: 100%; 
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.browse_jobcards > div { /* Assuming each job card is a direct child of .browse_jobcards */
+  flex: 0 1 calc(33.33% - 20px); /* Calculate the width for two items per row, accounting for gap */
+  box-sizing: border-box;
+  height: 300px; /* Adjust height as necessary */
+}
+
+.browse_div1 {
+  height: 300px;
+  width: 100%;
+  background-color: rgb(4, 4, 114);
+}
+
+.browse_div2 span {
+  margin-bottom: 5px;
+}
+
+.browse_div2 span,
+.browse_div2 p {
+  padding-left: 50px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.browse_div1 h1 {
+  padding-top: 50px;
+  padding-left: 50px;
+  color: white;
+}
+
+.browse_span pre {
+  color: white;
+  margin-left: 50px;
+  font-size: 15px;
+}
+
+.browse_div4 {
+  box-sizing: border-box;
+  height: 1600px;
+  width: 100%;
+  border: 10px solid rgb(235, 233, 233);
+  background-color: rgb(235, 233, 233);
+  margin: 50px auto;
+}
+
+.browse_div4 input,
+.browse_div5 input {
+  border: 1px solid #dacdcd;
+}
+
+.browse_div5 {
+  height: 1450px;
+  width: 1000px;
+  padding: 20px;
+  border: 10px solid white;
+  background-color: white;
+  margin: 100px auto;
+}
+
+.browse_div5 h1 {
+  color: rgb(4, 4, 114);
+  text-align: center;
+}
+
+.browse_label,
+.browse_input {
+  margin-bottom: 5px;
+}
+
+.browse_flexrow {
+  display: flex;
+  gap: 20px;
+}
+
+.browse_select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.browse_input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.browse_label {
+  display: block;
+}
+
+.browse_innerflexrow {
+  flex: 1;
+}
+
+.browse_textarea {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.browse_span {
+  display: block;
+  margin-top: 5px;
+}
+
+.browse_styled {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.browse_styled:focus,
+.browse_select:focus,
+.browse_textarea:focus {
+  border: 3px solid #007bff;
+  outline: none;
+}
+
+.browse_jobtitle,
+.browse_flexrow,
+.browse_form-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.browse_submit-btn button {
+  background-color: rgb(4, 4, 114);
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.browse_submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.browse_submit-btn button:hover {
+  background-color: rgb(4, 4, 114);
+  cursor: pointer;
+  border-radius: 20px;
+}
